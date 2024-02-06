@@ -1,4 +1,6 @@
-const chalk = require('chalk')
+#!/usr/bin/env node
+
+import chalk from 'chalk';
 
 const brief = `
 usage: [${chalk.cyan('layer')}] [${chalk.yellow('slice')}] -[${chalk.magentaBright('command')}]
@@ -22,7 +24,6 @@ ${chalk.magentaBright('-r')} removes a slice from layer
 const [layer, slice] = process.argv.slice(2);
 if (!layer) {
     console.log(brief)
-    return;
+} else {
+    console.log(layer, slice)
 }
-
-console.log(layer, slice)

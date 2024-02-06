@@ -1,15 +1,13 @@
 {
   "name": "@roms/fsd",
+  "type": "module",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "add-feature": "node index.js"
-  },
+  "bin": "./index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^4.1.2"
+    "chalk": "^5.3.0"
   }
 }
